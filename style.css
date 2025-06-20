@@ -1,7 +1,7 @@
 body{
     font-family:arial ,sans-serif;
     background-color:#f3f3f3;
-    max-width:600px;
+    background-attachment:fixed;
     padding:20px;
     background-image:url("images.jpg");
     background-repeat:no-repeat;
