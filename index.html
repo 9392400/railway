@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+   <script>
+    emailjs.init("ELRZFAvDX3192RzaT");
+    </script>
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Railway Reservation system</h1>
+          <div id="form-box">
+            <label>Passenger Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <label>Age:</label>
+            <input type="number" id="age" placeholder="Enter your age">
+            <label>source station</label>
+            <input type="text" id="source" placeholder="source station">
+            <label>destination station</label>
+            <input type="text" id="destination" placeholder="destination station">
+            <label>date: </label>
+            <input type="date" id="timedate">
+            <label>class:</label>
+            <select id="class">
+            <option value="sleeper">sleeper</option>
+            <option value="AC 3 tier">AC 3 tier</option>
+            <option value="AC 2 tier">Ac 2 tier</option>
+            <option value="first class">first class</option>
+            </select>
+            <button onclick="reserveclick()">Reserve ticket</button>
+        </div>
+        <div id="result-box"style="display:none">
+
+            <h2>Reservation successful</h2>
+            <p><b>Name:</b><span id="ticket-name"></span></p>
+            <p><b>Age:</b><span id="ticket-age"></span></p>
+            <p><b>source:</b><span id="ticket-source"></span></p>
+            <p><b>destination:</b><span id="ticket-destination"></span></p>
+            <p><b>date:</b><span id="ticket-date"></span></p>
+            <p><b>class:</b><span id="ticket-class"></span></p>
+            <button onclick="window.print() ">print ticket</button>
+            <button onclick="bookticket()">book another ticket</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
