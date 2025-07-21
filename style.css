@@ -33,4 +33,24 @@ button{
 button:hover{
     background-color: #3C3c00;
 }
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container {
+    padding: 15px;
+    max-width: 90%;
+    border-radius: 6px;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
 
